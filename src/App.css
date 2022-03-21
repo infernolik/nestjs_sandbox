@@ -1,0 +1,97 @@
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+body {
+  background-color: grey;
+}
+/* Item List */
+.main {
+  height: 100vh;
+  padding: 2rem;
+}
+.list {
+  background-color: lightgray;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: 4px solid black;
+  align-items: center;
+}
+.list-item > .content > p,
+.list-item > .content > label,
+.list-item > .content > input {
+  margin-left: 1rem;
+}
+.list-item > .content {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+/* btn */
+.btn {
+  justify-self: end;
+  display: block;
+  padding: 1rem;
+  color: white;
+  background-color: darkolivegreen;
+  border-radius: 10px;
+  transition: opacity 0.2s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+#status {
+  height: 2rem;
+  width: 2rem;
+  /* vertical-align: middle; */
+}
+
+/* Edit Modal */
+.back {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.edit-modal {
+  min-height: 150px;
+  width: 70%;
+  background-color: azure;
+  border-radius: 5px;
+  margin: 150px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.edit-modal > label {
+  margin-right: 0.5rem;
+}
+.edit-modal > #task {
+  width: 90%;
+  height: 2rem;
+  font-size: 1.5rem;
+  outline: none;
+  margin-right: 0.5rem;
+}
